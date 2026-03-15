@@ -50,6 +50,16 @@ Every package extends `tsconfig.base.json` which sets `composite: true`. The roo
 
 ## Packages
 
+### `artifacts/web` (`@workspace/web`)
+
+Personal CV/portfolio website for Gabriele Brunini. Frontend-only React + Vite app with Tailwind CSS, Framer Motion animations, and Lucide icons. All CV data is hardcoded — no backend or database needed.
+
+- Entry: `src/main.tsx` → `src/App.tsx` → `src/pages/Home.tsx`
+- CV data: `src/data/cv.ts`
+- Components: `src/components/cv/` (Hero, Profile, Experience, Education, Languages)
+- Styling: Tailwind CSS with custom dark theme in `src/index.css`
+- Dependencies: `framer-motion`, `lucide-react`, `clsx`, `tailwind-merge`
+
 ### `artifacts/api-server` (`@workspace/api-server`)
 
 Express 5 API server. Routes live in `src/routes/` and use `@workspace/api-zod` for request and response validation and `@workspace/db` for persistence.

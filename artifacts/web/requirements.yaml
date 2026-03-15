@@ -1,0 +1,12 @@
+packages:
+  "framer-motion": "For page transitions and scroll-triggered animations to make the CV feel premium"
+  "clsx": "Utility for conditionally joining classNames"
+  "tailwind-merge": "Utility for merging Tailwind classes safely"
+  "lucide-react": "For beautiful vector icons across the CV"
+
+images: []
+
+notes:
+  - This is a frontend-only static CV site.
+  - No backend or database is required.
+  - All CV data is intentionally hardcoded as requested.
