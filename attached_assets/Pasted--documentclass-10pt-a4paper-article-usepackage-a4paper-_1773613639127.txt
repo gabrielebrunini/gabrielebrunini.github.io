@@ -1,0 +1,119 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=1.35cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2.5pt}
+\setlist[itemize]{leftmargin=1.2em,itemsep=1.5pt,topsep=2pt,parsep=0pt,partopsep=0pt}
+\linespread{1.02}
+
+\titleformat{\section}
+  {\large\scshape\raggedright}
+  {}
+  {0em}
+  {}[\color{black}\titlerule]
+
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\begin{document}
+
+%====================
+% Header
+%====================
+{\LARGE \textbf{Gabriele Brunini}}\\[3pt]
+{\normalsize Quantitative Investment Manager}\\[5pt]
+Zurich, Switzerland \quad $|$ \quad 0772593546 \quad $|$ \quad
+\href{mailto:gabriele.brunini98@gmail.com}{gabriele.brunini98@gmail.com}\\[2pt]
+\href{https://www.linkedin.com/in/gabriele-brunini}{LinkedIn}
+\quad $|$ \quad
+\href{https://github.com/gabrielebrunini?tab=repositories}{GitHub}
+
+%====================
+% Profile
+%====================
+\section*{Profile}
+AI engineer and quantitative finance professional with experience building AI, data, and cloud solutions in financial services. Background in machine learning, data engineering, MLOps, and applied AI for compliance, investment workflows, and legal text analysis. Strong foundation across Python, Azure OpenAI, SQL, Snowflake, dbt, Terraform, and workflow automation.
+
+%====================
+% Experience
+%====================
+\section*{Experience}
+
+\textbf{Vontobel} \hfill Zurich, Switzerland\\
+\textit{Quantitative Investment Manager} \hfill Mar 2026 -- Present
+\begin{itemize}
+    \item Working in the Asset Allocation team at the intersection of quantitative investing, technology, and economics.
+\end{itemize}
+
+\textit{Data Engineer} \hfill Oct 2025 -- Mar 2026
+\begin{itemize}
+    \item Designed and implemented Terraform-based infrastructure as code on Azure across multiple environments.
+    \item Consolidated cloud architecture, improved security controls, and automated CI/CD workflows with GitHub Actions.
+    \item Built data transformation pipelines with dbt and Snowflake, including 63+ models and 118 tests.
+\end{itemize}
+
+\textit{Data Scientist, Graduate Program in Compliance \& Trading Product Development} \hfill Oct 2023 -- Sep 2025
+\begin{itemize}
+    \item Developed an AI use case for KYC compliance screening using Azure OpenAI, Python, and prompt-based legal categorization.
+    \item Built and deployed a transaction monitoring application in R Shiny on OpenShift, reducing manual review time by 30\%.
+    \item Developed data and DevOps workflows using Airflow, SQLAlchemy, Terraform, GitHub Actions, and Streamlit for monitoring and model analysis.
+\end{itemize}
+
+\textbf{Idiap Research Institute} \hfill Martigny, Switzerland\\
+\textit{Research Intern} \hfill Sep 2022 -- Aug 2023
+\begin{itemize}
+    \item Developed deep learning models for sleep stage classification from polysomnography data.
+    \item Designed CNN-GRU architectures for robust time-series classification across clinics and patient populations.
+\end{itemize}
+
+\textbf{University of Zurich} \hfill Zurich, Switzerland\\
+\textit{Data Scientist} \hfill May 2022 -- May 2023
+\begin{itemize}
+    \item Built applications for legal data collection, processing, and post-processing.
+    \item Applied NLP and machine learning to legal texts using Python, BeautifulSoup, spaCy, NLTK, and R Shiny.
+\end{itemize}
+
+\textbf{ETH Zurich} \hfill Zurich, Switzerland\\
+\textit{Student Research Assistant} \hfill Apr 2021 -- Feb 2022
+\begin{itemize}
+    \item Worked on PDF extraction and text-processing workflows including regex-based reference detection, date parsing, and statistical reporting.
+\end{itemize}
+
+\textbf{Aubay Italia} \hfill Milan, Italy\\
+\textit{Junior ETL Developer (50\%)} \hfill Feb 2020 -- Jul 2020
+\begin{itemize}
+    \item Developed ETL processes for financial data pipelines involving Oracle, Teradata, and Hadoop in a project for Intesa Sanpaolo.
+\end{itemize}
+
+%====================
+% Education
+%====================
+\section*{Education}
+
+\textbf{University of Zurich} \hfill Zurich, Switzerland\\
+\textit{Master of Science (MS), Data Science} \hfill Sep 2020 -- Aug 2023
+
+\textbf{Universit\`a Bocconi} \hfill Milan, Italy\\
+\textit{BSc, Economics, Management and Computer Science} \hfill 2017 -- 2020
+
+\textbf{ETH Zurich} \hfill Zurich, Switzerland\\
+\textit{Special Student, Computer Science} \hfill 2020 -- 2022
+
+\textbf{Tilburg University} \hfill Tilburg, Netherlands\\
+\textit{Exchange Program} \hfill 2019
+
+%====================
+% Languages
+%====================
+\section*{Languages}
+English (Native or Bilingual) \quad $|$ \quad
+Italian (Native or Bilingual) \quad $|$ \quad
+German (Professional Working)
+
+\end{document}
