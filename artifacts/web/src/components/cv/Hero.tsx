@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone, Github, Linkedin, ArrowRight } from "lucide-react";
+import { Mail, MapPin, Phone, Github, Linkedin } from "lucide-react";
 import { CV_DATA } from "@/data/cv";
 
 export function Hero() {
