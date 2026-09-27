@@ -28,13 +28,13 @@ export function Hero() {
       className="py-20 md:py-32 relative"
     >
       <motion.div
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-primary/15 via-background to-background -z-10"
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-primary/5 via-background to-background -z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       />
       
-      <div className="flex flex-col md:flex-row gap-8 items-start md:items-center justify-between">
+      <div className="flex flex-col md:flex-row gap-12 items-start md:items-center justify-between">
         <div className="space-y-4 flex-1">
           <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-display font-bold tracking-tight text-foreground">
             {name}
@@ -60,25 +60,34 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <motion.div variants={itemVariants} className="flex gap-4">
-          <a
-            href={linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-14 h-14 rounded-2xl bg-card border border-border shadow-lg shadow-black/20 text-foreground hover:bg-primary/10 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group"
-            aria-label="LinkedIn"
-          >
-            <Linkedin className="w-6 h-6 group-hover:text-primary transition-colors" />
-          </a>
-          <a
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-14 h-14 rounded-2xl bg-card border border-border shadow-lg shadow-black/20 text-foreground hover:bg-primary/10 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group"
-            aria-label="GitHub"
-          >
-            <Github className="w-6 h-6 group-hover:text-primary transition-colors" />
-          </a>
+        <motion.div variants={itemVariants} className="flex flex-col items-center gap-6 self-center md:self-auto">
+          <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden ring-4 ring-primary/20 ring-offset-4 ring-offset-background shadow-lg">
+            <img
+              src={`${import.meta.env.BASE_URL}portrait.jpeg`}
+              alt={`Portrait of ${name}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex gap-4">
+            <a
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-14 h-14 rounded-2xl bg-white border-2 border-border shadow-md text-foreground hover:bg-primary/10 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-6 h-6 group-hover:text-primary transition-colors" />
+            </a>
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-14 h-14 rounded-2xl bg-white border-2 border-border shadow-md text-foreground hover:bg-primary/10 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group"
+              aria-label="GitHub"
+            >
+              <Github className="w-6 h-6 group-hover:text-primary transition-colors" />
+            </a>
+          </div>
         </motion.div>
       </div>
     </motion.div>

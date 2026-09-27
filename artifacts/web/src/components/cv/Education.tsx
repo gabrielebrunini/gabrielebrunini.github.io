@@ -30,6 +30,11 @@ export function Education() {
                 <p className="text-sm text-muted-foreground/80 font-mono">
                   {edu.period}
                 </p>
+                {"detail" in edu && edu.detail && (
+                  <p className="text-sm text-muted-foreground leading-relaxed pt-1">
+                    {edu.detail}
+                  </p>
+                )}
               </div>
             </div>
           </div>

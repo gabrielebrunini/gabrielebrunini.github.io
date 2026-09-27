@@ -2,6 +2,7 @@ import { Hero } from "@/components/cv/Hero";
 import { Profile } from "@/components/cv/Profile";
 import { Experience } from "@/components/cv/Experience";
 import { Education } from "@/components/cv/Education";
+import { Projects } from "@/components/cv/Projects";
 import { Languages } from "@/components/cv/Languages";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <Profile />
         <Experience />
         <Education />
+        <Projects />
         <Languages />
         
         {/* Footer */}
